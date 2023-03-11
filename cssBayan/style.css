@@ -6,6 +6,11 @@
 body{
  background: #F6F6EC;
 }
+.meme{
+    width: 0;
+    height: 0;
+    margin-left: 25%;
+}
 .memes-container{
     display: flex;
     flex-direction: column;
@@ -24,4 +29,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+input{
+    display: none;
+}
+
+#first-meme:checked + label .meme{
+    width: 250px;
+    height: 250px;
+}
+#second-meme:checked + label .meme{
+    width: 250px;
+    height: 250px;
+}
+#third-meme:checked + label .meme{
+    width: 250px;
+    height: 250px;
+}
+#fourth-meme:checked + label .meme{
+    width: 250px;
+    height: 250px;
 }
