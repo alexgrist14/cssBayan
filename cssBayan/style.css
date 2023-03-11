@@ -1,177 +1,211 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Tilt Neon', cursive;
     transition: 0.5s all;
 }
 
-body{
- background: #F6F6EC;
+body {
+    background: #F6F6EC;
 }
-h2{
+
+h2 {
     color: #1363DA;
 }
-.meme{
+
+.meme {
     width: 0;
     height: 0;
     margin-left: 12%;
 }
-.memes-container{
+
+.memes-container {
     width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
 }
-.memes-container .meme-item .cross-icon img{
+
+.memes-container .meme-item .cross-icon img {
     position: absolute;
     width: 1em;
     height: 1em;
 }
-.meme-item{
+
+.meme-item {
     width: 25vw;
 }
 
-.meme-header{
+.meme-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.cross-icon{
+
+.cross-icon {
     transform: rotate(45deg);
     display: none;
 }
-input{
+
+input {
     display: none;
 }
 
 
-#first-meme:checked + label .meme{
-    width: 75%;
-    height: 75%;
-}
-#second-meme:checked + label .meme{
-    width: 75%;
-    height: 75%;
-}
-#third-meme:checked + label .meme{
-    width: 75%;
-    height: 75%;
-}
-#fourth-meme:checked + label .meme{
+#first-meme:checked + label .meme {
     width: 75%;
     height: 75%;
 }
 
-#first-meme:checked + label .first-cross img{
-    transform: rotate(135deg);
+#second-meme:checked + label .meme {
+    width: 75%;
+    height: 75%;
 }
-#second-meme:checked + label .second-cross img{
-    transform: rotate(135deg);
+
+#third-meme:checked + label .meme {
+    width: 75%;
+    height: 75%;
 }
-#third-meme:checked + label .third-cross img{
-    transform: rotate(135deg);
+
+#fourth-meme:checked + label .meme {
+    width: 75%;
+    height: 75%;
 }
-#fourth-meme:checked + label .fourth-cross img{
+
+#first-meme:checked + label .first-cross img {
     transform: rotate(135deg);
 }
 
-#first-meme:checked + label h2{
-    color: black;
+#second-meme:checked + label .second-cross img {
+    transform: rotate(135deg);
 }
-#second-meme:checked + label h2{
-    color: black;
+
+#third-meme:checked + label .third-cross img {
+    transform: rotate(135deg);
 }
-#third-meme:checked + label h2{
-    color: black;
+
+#fourth-meme:checked + label .fourth-cross img {
+    transform: rotate(135deg);
 }
-#fourth-meme:checked + label h2{
+
+#first-meme:checked + label h2 {
     color: black;
 }
 
-@media screen and (min-width: 1200px){
-    .first-meme:hover .meme{
+#second-meme:checked + label h2 {
+    color: black;
+}
+
+#third-meme:checked + label h2 {
+    color: black;
+}
+
+#fourth-meme:checked + label h2 {
+    color: black;
+}
+
+@media screen and (min-width: 1200px) {
+    .first-meme:hover .meme {
         width: 75%;
         height: 75%;
     }
-    .second-meme:hover .meme{
+
+    .second-meme:hover .meme {
         width: 75%;
         height: 75%;
     }
-    .third-meme:hover .meme{
+
+    .third-meme:hover .meme {
         width: 75%;
         height: 75%;
     }
-    .fourth-meme:hover .meme{
+
+    .fourth-meme:hover .meme {
         width: 75%;
         height: 75%;
     }
-    .memes-container:hover .meme-item{
+
+    .memes-container:hover .meme-item {
         cursor: pointer;
     }
 
-    .memes-container:hover .cross-icon{
+    .memes-container:hover .cross-icon {
         display: unset;
     }
-    .memes-container:hover h2{
+
+    .memes-container:hover h2 {
         color: black;
     }
 }
 
 @media screen and (max-width: 1180px) {
-    *{
+    * {
         font-size: 1rem;
     }
-    .meme-item{
+
+    .meme-item {
         width: 75vw;
     }
-    .cross-icon{
+
+    .cross-icon {
         display: unset;
     }
-    #first-meme:checked + label .meme{
+
+    #first-meme:checked + label .meme {
         width: 50%;
         height: 50%;
     }
-    #second-meme:checked + label .meme{
+
+    #second-meme:checked + label .meme {
         width: 50%;
         height: 50%;
     }
-    #third-meme:checked + label .meme{
+
+    #third-meme:checked + label .meme {
         width: 50%;
         height: 50%;
     }
-    #fourth-meme:checked + label .meme{
+
+    #fourth-meme:checked + label .meme {
         width: 50%;
         height: 50%;
     }
 }
 
 @media screen and (max-width: 568px) {
-    *{
+    * {
         font-size: 0.9rem;
     }
-    .meme{
+
+    .meme {
         margin-left: 0;
     }
-    .meme-item{
+
+    .meme-item {
         width: 75vw;
     }
-    .cross-icon{
+
+    .cross-icon {
         display: unset;
     }
-    #first-meme:checked + label .meme{
+
+    #first-meme:checked + label .meme {
         width: 100%;
         height: 100%;
     }
-    #second-meme:checked + label .meme{
+
+    #second-meme:checked + label .meme {
         width: 100%;
         height: 100%;
     }
-    #third-meme:checked + label .meme{
+
+    #third-meme:checked + label .meme {
         width: 100%;
         height: 100%;
     }
-    #fourth-meme:checked + label .meme{
+
+    #fourth-meme:checked + label .meme {
         width: 100%;
         height: 100%;
     }
