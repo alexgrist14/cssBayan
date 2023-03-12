@@ -51,28 +51,20 @@ h2 {
 input {
     display: none;
 }
-
-
-#first-meme:checked + label .meme {
+input:checked + label .meme {
+    display: unset;
     width: 75%;
     height: 75%;
 }
 
-#second-meme:checked + label .meme {
-    width: 75%;
-    height: 75%;
+input:checked + label h2 {
+    color: black;
 }
 
-#third-meme:checked + label .meme {
-    width: 75%;
-    height: 75%;
+input + label .meme {
+    width: 0;
+    height: 0;
 }
-
-#fourth-meme:checked + label .meme {
-    width: 75%;
-    height: 75%;
-}
-
 #first-meme:checked + label .first-cross img {
     transform: rotate(135deg);
 }
@@ -89,21 +81,7 @@ input {
     transform: rotate(135deg);
 }
 
-#first-meme:checked + label h2 {
-    color: black;
-}
 
-#second-meme:checked + label h2 {
-    color: black;
-}
-
-#third-meme:checked + label h2 {
-    color: black;
-}
-
-#fourth-meme:checked + label h2 {
-    color: black;
-}
 
 @media screen and (min-width: 1200px) {
     .first-meme:hover .meme {
